@@ -9,10 +9,10 @@
 	},
 	"license": "MIT",
 	"main": "./dist/lib/index.js",
-	"name": "@joelek/ts-sockets",
+	"name": "@joelek/websockets",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/joelek/ts-sockets.git"
+		"url": "https://github.com/joelek/websockets.git"
 	},
 	"scripts": {
 		"appgen": "node -e \"process.stdout.write(JSON.stringify((({ name, version }) => ({ name, timestamp: Date.now(), version }))(require('./package.json')), null, '\t').split(/\\r?\\n/).join(require('os').EOL) + require('os').EOL)\" > ./source/app.json",

@@ -1,4 +1,4 @@
-# @joelek/ts-sockets
+# @joelek/websockets
 
 WebSocket client and server for NodeJS written completely in TypeScript.
 
@@ -9,7 +9,7 @@ WebSocket client and server for NodeJS written completely in TypeScript.
 The client can connect to both secure and normal WebSocket servers. The correct transport is selected based on the protocol specified in the URL.
 
 ```ts
-import { WebSocketClient } from "@joelek/ts-sockets";
+import { WebSocketClient } from "@joelek/websockets";
 
 let secure = new WebSocketClient("wss:/localhost/some/path");
 let normal = new WebSocketClient("ws:/localhost/some/path");
@@ -47,7 +47,7 @@ The server handles all upgrade requests as defined in version 13 of the WebSocke
 
 ```ts
 import * as libhttp from "http";
-import { WebSocketServer } from "@joelek/ts-sockets";
+import { WebSocketServer } from "@joelek/websockets";
 
 let server = new WebSocketServer();
 libhttp.createServer(server.getRequestHandler()).listen();
@@ -55,7 +55,7 @@ libhttp.createServer(server.getRequestHandler()).listen();
 
 ```ts
 import * as libhttp from "http";
-import { WebSocketServer } from "@joelek/ts-sockets";
+import { WebSocketServer } from "@joelek/websockets";
 
 let server = new WebSocketServer();
 libhttp.createServer().on("upgrade", server.getUpgradeHandler()).listen();
@@ -109,13 +109,13 @@ Ethereum contributions can be made to address `0xf1B63d95BEfEdAf70B3623B1A4Ba0D9
 Releases follow semantic versioning and release packages are published using the GitHub platform. Use the following command to install the latest release.
 
 ```
-npm install joelek/ts-sockets#semver:^2.3
+npm install joelek/websockets#semver:^2.3
 ```
 
 Use the following command to install the very latest build. The very latest build may include breaking changes and should not be used in production environments.
 
 ```
-npm install joelek/ts-sockets#master
+npm install joelek/websockets#master
 ```
 
 NB: This project targets TypeScript 4 in strict mode.
