@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import * as shared from "./shared";
 export declare class WebSocketClient implements shared.WebSocketLike {
     private state;

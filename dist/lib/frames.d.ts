@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import * as utils from "./utils";
 export declare enum WebSocketFrameType {
     CONTINUATION = 0,

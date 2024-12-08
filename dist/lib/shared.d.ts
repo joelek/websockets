@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 export declare enum ReadyState {
     CONNECTING = 0,
     OPEN = 1,

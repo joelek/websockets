@@ -1,5 +1,6 @@
 /// <reference types="node" />
 /// <reference types="node" />
+/// <reference types="node" />
 import * as libhttp from "http";
 export declare function getHeader(request: libhttp.IncomingMessage, key: string): string | null;
 export type State = {
