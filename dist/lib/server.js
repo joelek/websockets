@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.WebSocketServer = void 0;
 const libcrypto = require("crypto");
 const libtls = require("tls");
-const stdlib = require("@joelek/ts-stdlib");
+const stdlib = require("@joelek/stdlib");
 const frames = require("./frames");
 const is = require("./is");
 const shared = require("./shared");

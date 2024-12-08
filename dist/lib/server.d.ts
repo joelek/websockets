@@ -3,7 +3,7 @@
 /// <reference types="node" />
 import * as libhttp from "http";
 import * as libnet from "net";
-import * as stdlib from "@joelek/ts-stdlib";
+import * as stdlib from "@joelek/stdlib";
 import * as shared from "./shared";
 type UpgradeListener = (request: libhttp.IncomingMessage, socket: libnet.Socket) => void;
 type WebSocketServerConnectMessage = {
