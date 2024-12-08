@@ -2,7 +2,7 @@ import * as libcrypto from "crypto";
 import * as libhttp from "http";
 import * as libnet from "net";
 import * as libtls from "tls";
-import * as stdlib from "@joelek/ts-stdlib";
+import * as stdlib from "@joelek/stdlib";
 import * as frames from "./frames";
 import * as is from "./is";
 import * as shared from "./shared";

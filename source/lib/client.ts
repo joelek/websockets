@@ -3,7 +3,7 @@ import * as libhttp from "http";
 import * as libhttps from "https";
 import * as libnet from "net";
 import * as liburl from "url";
-import * as stdlib from "@joelek/ts-stdlib";
+import * as stdlib from "@joelek/stdlib";
 import * as frames from "./frames";
 import * as is from "./is";
 import * as shared from "./shared";
