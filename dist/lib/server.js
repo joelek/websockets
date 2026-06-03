@@ -132,6 +132,9 @@ class WebSocketServer {
         socket.on("error", (error) => {
             socket.end();
         });
+        socket.on("end", () => {
+            socket.end();
+        });
         socket.setTimeout(0);
         this.connections.add(connection_id, socket);
         this.states.set(connection_id, shared.ReadyState.OPEN);

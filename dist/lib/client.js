@@ -123,6 +123,10 @@ class WebSocketClient {
                 this.listeners.route("error", {});
                 socket.end();
             });
+            socket.on("end", () => {
+                this.state = shared.ReadyState.CLOSING;
+                socket.end();
+            });
             if (response.statusCode !== 101) {
                 return socket.emit("error");
             }
